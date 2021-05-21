@@ -22,7 +22,7 @@ export class ValidationPipe implements PipeTransform<any> {
    * @returns 
    */
   async transform(value, metadata: ArgumentMetadata) {
-
+    console.log('pipe')
     if (!value) {
       throw new BadRequestException('No data submitted');
     }
