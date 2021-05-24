@@ -36,7 +36,7 @@ export class ValidationPipe implements PipeTransform<any> {
       return value;
     }
 
-    //使用 class-transformer 的 plainToClass() 方法来转换 JavaScript 的参数为可验证的类型对象。
+    // 使用 class-transformer 的 plainToClass() 方法来转换 JavaScript 的参数为可验证的类型对象。
     // 将接口JSON value 以metatype 转换为 CreateUserDto 的class
     const object = plainToClass(metatype, value);
     console.log(object)

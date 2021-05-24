@@ -123,7 +123,7 @@ export class UserService {
       id: user.id,
       username: user.username,
       email: user.email,
-      exp: exp.getTime() / 1000,
+      exp: exp.getTime() / 1000,  // jwt过期时间
     }, SECRET);
   };
 
